@@ -8,6 +8,10 @@
     console.log(pyodide.runPython(`
 import sys
 sys.version
+
+import micropip
+
+await micropip.install('seaborn')
     `));
   })(); // call the async function immediately
 </script>
